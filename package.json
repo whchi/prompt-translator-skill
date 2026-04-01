@@ -58,5 +58,6 @@
 	"bugs": {
 		"url": "https://github.com/whchi/prompt2eng/issues"
 	},
-	"homepage": "https://github.com/whchi/prompt2eng#readme"
+	"homepage": "https://github.com/whchi/prompt2eng#readme",
+	"version": "0.0.1"
 }
