@@ -138,7 +138,7 @@ export async function runInteractive(): Promise<void> {
 		choices: [
 			{ title: 'opencode', value: 'opencode' },
 			{ title: 'claude code', value: 'claude' },
-			{ title: 'other (codex, gemini, …)', value: 'other' },
+			{ title: 'other (support .agents/ like codex, gemini…)', value: 'other' },
 		],
 	});
 	if (aborted(tool)) return cancel();
@@ -175,7 +175,7 @@ export async function runInteractive(): Promise<void> {
 	const { baseLang } = await prompts({
 		type: 'autocomplete',
 		name: 'baseLang',
-		message: 'Language tag (type to search):',
+		message: 'Your language tag (type to search):',
 		choices: languageChoices,
 		suggest: (input: string, choices: any[]) => {
 			const q = input.toLowerCase();
