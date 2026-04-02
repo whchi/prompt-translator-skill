@@ -8,9 +8,9 @@
 	"files": [
 		"dist/**/*.js",
 		"dist/**/*.map",
-        "!dist/**/*.ts.map",
+		"!dist/**/*.ts.map",
 		"!dist/**/*.test.*",
-        "!dist/**/*.d.ts",
+		"!dist/**/*.d.ts",
 		"templates"
 	],
 	"engines": {
@@ -60,5 +60,5 @@
 		"url": "https://github.com/whchi/prompt2eng/issues"
 	},
 	"homepage": "https://github.com/whchi/prompt2eng#readme",
-	"version": "0.0.3"
+	"version": "0.0.4"
 }
