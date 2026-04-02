@@ -46,7 +46,7 @@ prompt2eng
 ```
 $ prompt2eng
 
-Prompt Translator Skill Generator
+Prompt To english Skill Generator
 
 ? Which AI tool are you using? OpenCode
   → config: ~/.config/opencode/AGENTS.md  skills: ~/.config/opencode/skills/prompt2eng

@@ -128,7 +128,7 @@ function aborted(value: unknown): boolean {
 // ── main ──────────────────────────────────────────────────────────────────────
 
 export async function runInteractive(): Promise<void> {
-	console.log(chalk.cyan.bold('\nPrompt Translator Skill Generator\n'));
+	console.log(chalk.cyan.bold('\nPrompt To English Skill Generator\n'));
 
 	// Step 1 — tool
 	const { tool } = await prompts({
