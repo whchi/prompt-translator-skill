@@ -80,11 +80,14 @@ async function loadExamples(): Promise<
 	return JSON.parse(content);
 }
 
-function getExamples(
+export function getExamples(
 	lang: string,
 	data: Record<string, Array<{ input: string; output: string }>>,
 ) {
+	const normalized = lang.includes('-')
+		? lang.split('-')[0].toLowerCase() + '-' + lang.split('-')[1].toUpperCase()
+		: lang.toLowerCase();
 	const base = lang.split('-')[0].toLowerCase();
-	const examples = data[base] ?? data.zh;
+	const examples = data[normalized] ?? data[base] ?? data.zh;
 	return { examples };
 }
